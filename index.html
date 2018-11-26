@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Journal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/styles/styles.css">
+</head>
+<body>
+    <h1>
+        Daily Journal
+    </h1>
+    <form action ="">
+        <fieldset>
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <fieldset>
+            <label for="journalConcepts">Concepts Covered</label>
+            <input type="text" name="journalConcepts" id="journalConcepts">
+        </fieldset>
+        <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <input type="textarea" name="journalEntry" id="journalEntry">
+        </fieldset>
+        <fieldset>
+            <label for="journalMood">Mood: </label>
+                <select id="journalMood">
+                    <option>Anxious</option>
+                    <option>Confident</option>
+                    <option>Confused</option>
+                    <option>Energetic</option>
+                    <option>Frustrated</option>
+                    <option>Good</option>
+                    <option>Happy</option>
+                    <option>Optimistic</option>
+                    <option>Relaxed</option>
+                    <option>Relieved</option>
+                    <option>Sleep-deprived</option>
+                    <option>Stressed</option>
+                    <option>Suspicious</option>
+                </select>
+            <label for="journalMood">Other: </label>
+            <input list="journalMood" name="journalMood" id="journalMood">
+            <button type="submit" name="buttonSubmit" id="buttonSubmit">
+            <label for="buttonSubmit">Record Journal Entry</label>
+            </button>
+        </fieldset>
+    </form>
+    
+    <script src="src/scripts/scripts.js"></script>
+</body>
+</html>
